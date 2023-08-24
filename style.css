@@ -1,0 +1,247 @@
+#special {
+    font-style: italic;
+    color: blue;
+  }
+  #red-box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 0);
+  }
+  /* Селекторы по class */
+  .green-text {
+    color: green;
+  }
+  .italic-text {
+    font-style: italic;
+  }
+  h1 {
+    color: lightcoral;
+  }
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-links-part a {
+    margin-right: 40px; /* Расстояние между ссылками */
+  }
+  .nav-links-part {
+    margin-top: -15px; /* Чуть поднять блок вверх */
+  }
+  .menu-items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  main {              /* блок для главного кода CupAndCake*/
+    text-align: center;
+    padding: 50px;
+  }                            
+  h1 {
+    color: lightcoral;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: black;
+  }
+ 
+  li {
+    margin-bottom: 5px;
+  }
+  h1 {
+    color: rebeccapurple
+  }
+  .content-container {
+    margin-left: 500px; /* Изменение сторон блока content-container */
+    margin-top: 100px;   /* в верх */
+    margin-bottom: 30px; /* Отступ снизу */
+  }
+      /*изменение сторон и высоты для выпадающего списка*/
+  .header-part {
+    text-align: center; /* по центру */
+    margin-top: 20px;   /*  вверх */
+    margin-bottom: 50px; /* низ */
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center; /*  по горизонтали по центру */
+    align-items: center; /* по вертикали по центру */
+   
+  }
+
+  .product-dropdown {
+    float: left;
+  }
+  .product-dropdown {
+    float: right;
+  }
+ 
+  a {
+    text-decoration: none; /* Убирает подчеркивание ссылок */
+    color: red; /* Задает цвет текста для ссылок */
+  }
+
+
+  /* добавили рамку для SHOP */
+  .clickable-area {
+    border: 100px solid gold; 
+    padding: 400px 50px; 
+    display: inline-block; 
+    margin-left: 1000px; /* Смещение блока влево */
+  }
+  
+ 
+
+   /* для увелечение или уменьшение SHOP*/
+  
+  
+  .flex-container {
+    margin-left: 0px; /* перемещение логотипа LOGO */
+  }
+  .flex-container{
+    margin-right: 700px;
+  }
+     
+    
+  
+      .clickable-area {
+        border: 5px solid gold; 
+        padding: 1000px 70px;            /* ??? не клик*/
+        display: inline-block; 
+        margin-bottom: 1px; 
+      }
+      .inner-border {
+        border: 5px solid goldenrod; /* Стили внутренней рамки */
+        padding: 90px; 
+        margin-left: 0px; 
+        margin-right: 50px;
+      }
+  
+             /*для второй рамки  SHOP*/
+      .clickable-area {
+        border: 5px solid gold; 
+        padding: 10px 50px; 
+        display: inline-block; 
+        margin-top: 100px;
+        margin-bottom: px; /* Добавляем отступ снизу для разделения блоков */
+      }
+
+       /* Для рамки SHOP */
+      
+    .inner-border {
+        border: 5px solid gold;
+        padding: 2px;
+        margin: 1px;
+    }
+    
+    /*для WHY US*/
+    header {
+     
+      padding: 20px; 
+      text-align: center; 
+  }
+ 
+  
+  /*для Top cooks*/
+  .product-selection {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+}
+    
+.product-selection {
+  display: inline-block; /* Делаем блоки в строчку */
+  vertical-align: top; /* Выравниваем по верхнему краю */
+  margin: 0 10px; /* Отступы между блоками */
+}
+
+.product-selection a {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.product-selection h2 {
+  font-size: 24px;
+  margin: 0;
+}
+    
+
+  /*для Why Us.About Us.Menu*/
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: black;
+}
+
+.product-description {
+  font-family: Arial, sans-serif; /* Измените на желаемый шрифт */
+  border: 2px solid #ddd; /*Рамка*/
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  line-height: 2.5;
+  text-align: left;
+} 
+ /*для CAKES*/
+.cake {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/*Для MACARONS*/
+.MACARONS {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 1000px; 
+}
+
+/*Для MOUSE*/
+.MOUSE {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: -100px;
+  
+}
+/*двиг.для Home.AboutUs.Menu*/
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 100;
+  margin: 50;
+}
+
+.nav-list li {
+  margin-left: 100px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color:black
+}
+
+
+
