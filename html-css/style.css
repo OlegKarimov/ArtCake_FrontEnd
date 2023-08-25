@@ -97,7 +97,10 @@
 
 
   /* добавили рамку для SHOP */
-  .clickable-area {
+  
+
+
+.clickable-area {
     border: 100px solid gold; 
     padding: 400px 50px; 
     display: inline-block; 
@@ -242,6 +245,3 @@ header h1 {
   text-decoration: none;
   color:black
 }
-
-
-
