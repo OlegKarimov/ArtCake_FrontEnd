@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+<!-- ссылка на подключение внешнего css -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet"> <!-- Добавил ссылку на изменение шрифта.??? задача -->
+
+ </head>
+
+<!--для внешних скриптов JS .Это помогает ускорить начальную загрузку страницы, но может замедлить её отображение,-->
+
+​<body>
+  <script>
+
+    
+    /*прописали JS для перехода SingIn на Login*/
+
+      function toggleForm() {
+        var loginForm = document.getElementById("login-form");
+        var singInForm = document.getElementById("singin-form");
+
+        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+        singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
+    }
+
+    /* JS для перехода из SingOut на SingIn */
+    function signOut() {
+        // Здесь можно добавить код для выхода пользователя из системы или выполнить другие действия
+        // ...
+
+        // Перенаправляем пользователя на страницу SignIn
+        window.location.href = "/log_in.html";
+    }
+  </script>
+
+<!--Попробовали прописать калькулятор -->
+<h1>Калькулятор сумм</h1>
+<form id="calculator-form">
+    <input type="text" id="display" readonly>
+    <br>
+    <button type="button" onclick="appendToDisplay('1')">1</button>
+    <button type="button" onclick="appendToDisplay('2')">2</button>
+    <button type="button" onclick="appendToDisplay('3')">3</button>
+    <button type="button" onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('4')">4</button>
+    <button type="button" onclick="appendToDisplay('5')">5</button>
+    <button type="button" onclick="appendToDisplay('6')">6</button>
+    <button type="button" onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('7')">7</button>
+    <button type="button" onclick="appendToDisplay('8')">8</button>
+    <button type="button" onclick="appendToDisplay('9')">9</button>
+    <button type="button" onclick="appendToDisplay('*')">*</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('0')">0</button>
+    <button type="button" onclick="clearDisplay()">C</button>
+    <button type="button" onclick="appendToDisplay('.')">.</button>
+
+    <button type="button" onclick="calculate()">=</button>
+    <button type="button" onclick="appendToDisplay('/')">/</button>
+</form>
+
+<script>
+    const display = document.getElementById('display');
+
+    function appendToDisplay(value) {
+    // Проверьте, что точка еще не добавлена
+    if (value === '.' && display.value.includes('.')) {
+        return; // Если точка уже есть, игнорируем
+    }
+        display.value += value;
+    }
+
+    function clearDisplay() {
+        display.value = '';
+    }
+
+    function calculate() {
+        try {
+            const result = eval(display.value);
+            if (!isNaN(result)) {
+                display.value = result;
+            } else {
+                display.value = 'Ошибка';
+            }
+        } catch (error) {
+            display.value = 'Ошибка';
+        }
+    }
+</script>
+
+
+  <div class="logo">ArtCake</div>
+  <div class="nav-part">
+    <ul class="nav-list" style="display: flex; justify-content: flex-end;">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>   <!--задали стиль для списка,чтобы отображался в строке  на правом краю блока -->
+      <li><a href="#">MENU</a></li>
+    </ul>
+  </div>
+​  <div class="sign-out-block">
+  <a class="register-button" href="#">SingOut</a>
+</div>
+<div class="image-between-blocks">
+
+<!-- для шаблонной картинки-->
+<!-- для шаблонной картинки-->
+<img src="    " alt="    ">
+
+
+
+
+<header>
+  
+  <h1>Menu</h1>
+</header></div>
+<div class="cheesecakes-container">
+  <div class="cheesecakes-description">
+    <h1 class="cheesecakes-heading">Cheesecakes</h1>
+    <h3>RaspberryCheesecake</h3>
+   
+    <li><button type="button" onclick="appendToDisplay('25')">Price: $25</button></li>
+
+    <h3>WildberriesCheesecake</h3>
+   
+    <li><button type="button" onclick="appendToDisplay('30')">Price: $30</button></li>
+
+    <h3>LillyCheesecake</h3>
+    <li><button type="button" onclick="appendToDisplay('29')">Price: $29</button></li>
+
+    <h3>VanillaCheesecake</h3>
+    <li><button type="button" onclick="appendToDisplay('40,99')">Price: $40</button></li>
+
+    <h3>ChocolateCheesecake</h3>
+ 
+    <li><button type="button" onclick="appendToDisplay('32')">Price: $32</button></li>
+
+  </div>
+  <div class="cheesecakes-image">
+    <div class="image">
+      <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/cheesecakes/img/chocolate.jpg?raw=true" alt="Cakes Image">
+    </div>
+  </div>
+</div>
+
+
+<div class="cupcakes-container">
+  <div class="cupcakes-description">
+    <h1 class="cupcakes-heading">Cupcakes</h1>
+    <a href="log_in.html" class="buy-button">Price: $40</a>
+    <h3>BlackberryCupcake</h3>
+    <li><button type="button" onclick="appendToDisplay('28')">Price: $28</button></li>
+
+    <h3>ChocolateCupcake</h3>
+    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+
+    <h3>BlueberryCupcake</h3>
+    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+
+    <h3>WildberriesCupcake</h3>
+   
+    <div class="buttons">
+      <div class="dropdown">
+        <div class="dropdown-menu">
+          <button class="buy-button">Price:$32</button>
+        </div>
+      </div>
+    </div>       <!--Убераешь этот метод,поднимаеться картинка Macarons-->
+  </div>
+  <div class="cheesecakes-image">
+    <div class="image">
+      <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/cupcakes/img/wildberry.jpg?raw=true" alt="Cakes Image">
+    </div>
+  </div>
+</div>
+
+<div class="macaronsContainer">
+  <div class="macaronsDescription">
+    <h1 class="macarons-heading">Macarons</h1>
+    <h3>Lemon Macarons</h3>
+    <li><button type="button" onclick="appendToDisplay('30')">Price: $30</button></li>
+
+    <h3>Velvet Macarons</h3>
+    <li><button type="button" onclick="appendToDisplay('28')">Price: $28</button></li>
+
+    <h3>Chocolate Macarons</h3>
+    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+
+    <h3>Raspberries Macarons</h3>
+    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+
+    <h3>Blood Orange Macarons</h3>
+    <p>Price: 32$</p> 
+    <li><button type="button" onclick="appendToDisplay('32')">Price: $32</button></li>
+
+  </div>
+  <div class="MacaronsImage">
+    <div class="image">
+      <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/macarons/img/velvet.jpg?raw=true" alt="Cakes Image">
+    </div>
+  </div>
+</div>
+
+   <div class="mousseContainer">
+  <div class="mousseDescription">
+   <h1 class="mousse-heading">Mousse</h1>
+   <li><button type="button" onclick="appendToDisplay('30')">Price: $40</button></li>
+
+    <h3>StrawberryMousse</h3>
+    <li><button type="button" onclick="appendToDisplay('28')">Price: $40</button></li>
+
+    <h3>BlackberryMousse</h3>
+    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+
+    <h3>AppleMousse</h3>
+    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+
+    <h3>RaspberryMousse</h3>
+   
+    <div class="buttons">
+      <div class="dropdown">
+        <div class="dropdown-menu">
+          <button class="buy-button">Price:$32</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="MousseImage">
+    <div class="image">
+      <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/mousse/img/raspberrymousse.jpg?raw=true" alt="Cakes Image">
+    </div>
+  </div>
+</div>
+
+
+<header>
+  <h1>About US</h1>
+</header>
+<div class="product-description">
+  <div class="description-content">
+    <h2></h2>
+    <p>Welcome to ArtCake – your source for exquisite sweets and incredible flavors! We take pride in crafting true works of art in the realm of pastry. Our team of passionate bakers combines talent, creativity, and extensive experience to provide you with unforgettable gastronomic experiences.
+      Recipes</p>
+    
+  </div>
+  <div class="image-container">
+    <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/cheesecakes/img/raspberry.jpg?raw=true"
+     alt="Product Image">
+  </div>
+</div>
+
+<div class="product-description2">
+  <div class="image-container2">
+    <img src="https://github.com/OlegKarimov/ArtCake_FrontEnd/blob/dev/Images/cheesecakes/img/raspberry.jpg?raw=true" alt="Product Image">
+  </div>
+  <div class="description-content2">
+    <h2></h2>
+    <p>Get in Touch
+      We're thrilled to bring any of your ideas and fantasies to life! Contact us to discuss the details of your order, be it for a long-lasting event or celebration. At ArtCake, we're ready to create desserts that leave lasting impressions and offer you and your loved ones unforgettable culinary delights.
+      Thank you for choosing ArtCake – your reliable partner in the realm of splendid desserts!
+      Recipes</p>
+  </div>
+</div>
+
+
+ <!--futter-->
+ <!--  для добавлении рамки между классами-->
+ <footer class="footer-with-background">
+  <div class="footer-content">
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Help</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-text">
+      <h3>ArtCake</h3>
+      <p>Here you will find many new culinary ideas, </p>
+      <p>become the author of your own Cookbook,</p>
+      <p>meet like-minded friends and can chat about everything in the world!</p>
+    </div>
+  </div>
+</footer>
+
+
+  <footer class="footer"></footer>
+    
+      <hr class="footer-line"> <!-- Добавляем горизонтальную линию -->
+  </footer >
+
+ 
+  
+
+  
+</body>
+  </html>
+  

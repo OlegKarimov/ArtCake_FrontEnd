@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtCake Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet">
+
+ <script>
+
+    
+    /*прописали JS для перехода SingIn на Login*/
+    function toggleForm() {
+      var loginForm = document.getElementById("login-form");
+      var singInForm = document.getElementById("singin-form");
+
+      loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+      singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
+      
+    }
+  </script>
+
+</head>
+<body>
+  <div class="logo_login">ArtCake</div>
+  
+  <div id="login-form">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      <button type="submit">Next</button>
+    </form>
+    <div class="sing-in">
+      <button type="button" onclick="toggleForm()">Sign In</button>
+    </div>
+  </div>
+
+  <!--для JS на переходы между страницами-->
+  
+  
+  <div id="singin-form" style="display: none;">
+    <h1>Sign In</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city"><br><br>
+      
+      <label for="street">Street:</label>
+      <input type="text" id="street" name="street"><br><br>
+      
+      <label for="house">Number of house:</label>
+      <input type="text" id="house" name="house"><br><br>
+      
+      <label for="phone">Phone number:</label>
+      <input type="text" id="phone" name="phone"><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      <button type="submit">Next</button>
+    </form>
+    <div class="sing-in">
+      <button type="button" onclick="toggleForm()">Sign In</button>
+    </div>
+  </div>
+
+  <footer class="footer-with-background">
+    <div class="footer-content">
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-text">
+        <h3>ArtCake</h3>
+        <p>Here you will find many new culinary ideas, </p>
+        <p>become the author of your own Cookbook,</p>
+        <p>meet like-minded friends and can chat about everything in the world!</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+    <footer class="footer"></footer>
+      
+        <hr class="footer-line"> <!-- Добавляем горизонтальную линию -->
+    </footer >
+  

@@ -1,0 +1,357 @@
+
+/* Стили для блока навигации HOME.ABOUT US.MENU*/
+ 
+.nav-part {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start; 
+  margin-left: 300px; /* Перемещение вправо */
+  padding-bottom: 20px; /*  чтобы создать пространство между блоками */
+  letter-spacing: 1px;
+  word-spacing: 3px; /* Увеличение расстояния между словами */
+  font-size: 24px;
+  line-height: 0; /* Увеличение интервала между строками */
+  margin-top: -30px; 
+}
+/*Для добавлении картинки*/
+.image-between-blocks {
+  text-align: center; /* Центрируем изображение */
+  margin: 10px 0 ; /* Добавляем пространство между блоками */
+  padding:10px ; /*  внутренние отступы сверху и снизу */
+}
+
+.image-between-blocks img {
+  width: 100%; /* Растягиваем изображение на всю ширину блока */
+  height: auto; /* Автоматическая высота */
+  padding: 10px ; /* Добавляем внутренние отступы сверху и снизу */
+ 
+}
+.image-caption {
+  position: absolute;
+  top: 300px;
+  left: 400px; /* Смещение влево */
+  width: 100%;
+ 
+  font-size: 40px;
+  color: black;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {
+  margin-right: 20px;
+}
+.nav-list li:last-child {
+  margin-right: 0;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  text-align: left;
+  padding: 20px;
+ 
+  color:green;
+  font-size: 24px;
+}
+
+
+
+.order-button {
+  display: inline-block; /* Делаем ссылку блочным элементом */
+  padding: 10px 20px;
+  background-color: #F2C94C;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  right: 600px;
+  top: 550px;
+}
+
+
+/*для SignOut*/
+.sign-out-block {
+  text-align: right;
+  padding: 40px;
+  position: absolute;
+  top: 0; /* поднять к верхнему краю */
+  right: 0; /* Выровнять блок по правому краю */
+  font-size: 24px;
+  color: black; 
+  margin-top: 15px;
+}
+
+/* для MENU */
+header {
+  text-align: center;
+  padding: 100px;
+  color: gold;
+  margin-top: 10px;
+ 
+  padding-top: 150px; 
+  
+}
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color:red;
+}
+
+/*для Сheesecakes*/
+.cheesecakes-container {
+  display: flex;
+  justify-content: space-between; /*  распределить пространство между элементами */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px;
+}
+
+.cheesecakes-description {
+  flex: 1; /*  чтобы описание заняло левую часть */
+  padding: 20px;
+  order: 2; /*  чтобы описание было справа */
+}
+
+.cheesecakes-image {
+  flex: 1; /*  чтобы изображение заняло правую часть */
+  max-width: 70%;
+  
+}
+
+.cheesecakes-image .image {
+  text-align: right; /* Выравнивание изображения по правому краю */
+  padding-right: 20px; /* Добавляем небольшой отступ справа */
+  max-width: 70%;
+ 
+}
+
+
+/*для Cupcakes*/
+.cupcakes-container {
+  display: flex;
+  justify-content: space-between; /*  распределить пространство между элементами */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px;
+}
+
+.cupcakes-description {
+  flex: 1; /* Занимать всю доступную ширину */
+  padding: 20px;
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.cupcakes-image {
+  flex: 1; 
+  max-width: 70%;
+  
+}
+
+.cupcakes-image .image {
+  text-align: left; /* Выравнивание картинки по правому краю */
+  padding-left:  20px;
+  max-width: 70%;
+}
+
+
+/*для Macarons*/
+.macaronsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.macaronsDescription {
+  flex: 1; 
+  padding: 20px;
+  order: 2; / /*  чтобы описание было справа */
+}
+
+.MacaronsImage {
+  flex: 1; 
+}
+
+.MacaronsImage img {
+  text-align: right; 
+  padding-right: 20px;
+  max-width: 70%;
+}
+
+/*для Mousse*/
+.mousseContainer {
+  display: flex;
+  justify-content: space-between; /*  распределить пространство между элементами */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px;
+}
+
+.mousseDescription {
+  flex: 1; 
+  padding: 20px;
+  text-align: left;
+}
+
+.MousseImage {
+  flex: 1;
+  
+}
+
+.MousseImage img {
+  max-width: 70%;
+  max-height: 100%;
+}
+
+.close-description {
+  margin-top: 10px;
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Стили для кнопок  */
+ .description-button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+ .buy-button {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/*для About US*/
+.product-description {
+  display: flex;
+  font-size: 30px;
+}
+.description-content {
+  flex: 1;
+  padding: 20px;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.image-container img {
+  max-width: 70%;
+  max-height: 100%;
+}
+
+/*для второго блока About US*/
+.product-description2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.image-container2 {
+  flex: 1;
+  margin-right: 20px; 
+  max-width: 70%;
+}
+.image-container2 img {
+  max-width: 70%;  /*уменьшение или прибавление картинки*/
+  max-height: 100%;
+ 
+}
+
+.description-content2 {
+  flex: 1;
+  padding: 20px;
+}
+
+/* для Home.Help.Privacy Police*/
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px; /*  расстояние между словами */
+  justify-content: last baseline;
+  margin-left: 250px;
+  margin-top:70px ;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-text {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+/*для ArtCake.Описание*/
+.footer-text h3 {
+  margin-bottom: 10px;
+  font-size: 48px;
+  margin-left: 250px; 
+  color: gold;
+ 
+}
+.footer-text p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: white;
+  font-size: 28px;
+  margin-left: 250px;
+}
+
+.footer-with-background {
+  background-color: rgb(81, 63, 63); /* Цвет фона */
+ 
+  
+  background-size: cover;
+  background-position: center;
+  /* Дополнительные стили для фона */
+}
+.cheesecakes-heading {
+  color: red; 
+}
+.cupcakes-heading{
+  color: red;
+}
+.macarons-heading{
+  color: red;
+}
+.mousse-heading{
+  color: red;
+}
+
+
+/*для кнопки купить -price*/
+li button {
+  background-color: #3498db; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста на кнопке */
+  padding: 5px 10px; /* Внутренние отступы кнопки */
+  border: none; /* Убираем границу у кнопки */
+  cursor: pointer; /* Задаем курсор в виде указателя при наведении */
+}
+
+/* Стили при наведении на кнопку */
+li button:hover {
+  background-color: #2980b9; /* Цвет фона кнопки при наведении */
+}

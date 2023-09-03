@@ -1,0 +1,206 @@
+
+
+/*для HEADER*/
+.logo {
+    text-align: left;
+    padding: 20px;
+   
+    color:red;
+    font-size: 24px;
+  }
+ 
+h3 {
+    font-size:35px; /* Размер шрифта */
+    color: red; /* Цвет текста (например, коричневый) */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+.nav-part {
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 300px; /* Перемещение вправо */
+    padding-bottom: 20px; /*  создать пространство между блоками */
+    letter-spacing: 1px;
+    word-spacing: 3px; /*  расстояния между словами */
+    font-size: 24px;
+    line-height: 0; /* интервала между строками */
+    margin-top: -30px; 
+  }
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list li {
+    margin-right: 20px;
+  }
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+  .sign-out-block {
+    text-align: right;
+    padding: 40px;
+    position: absolute;
+    top: 0; /* поднять к верхнему краю */
+    right: 0; /* Выровнять блок по правому краю */
+    font-size: 24px;
+    color: black; 
+    margin-top: 15px;
+  }
+  /*для Cheesecakes*/
+  .image-between-blocks {
+    text-align:center; /* Центрируем изображение */
+    margin: 100px 0 ; /* Добавляем пространство между блоками */
+    padding:10px ; /*  внутренние отступы сверху и снизу */
+  }
+  .image-between-blocks img {
+    width: 1000%; /* Растягиваем изображение на всю ширину блока */
+    height: auto; 
+    padding: 10px ; /* Добавляем внутренние отступы сверху и снизу */
+   
+  }
+
+  .cheesecakes-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cheesecakes-description {
+    flex: 1; /* чтобы описание занимало левую часть */
+    padding: 20px;
+    order: 1; /* чтобы описание было слева */
+  }
+
+ 
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px; /*  расстояние между словами */
+    justify-content: last baseline;
+    margin-left: 250px;
+    margin-top:70px ;
+  }
+  .footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .footer-text {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /*для ArtCake.Описание*/
+  .footer-text h3 {
+    margin-bottom: 10px;
+    font-size: 48px;
+    margin-left: 0px; 
+    color: gold;
+   
+  }
+  .footer-text p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: white;
+    font-size: 28px;
+    margin-left: 250px;
+  }
+  
+  .footer-with-background {
+    background-color: rgb(81, 63, 63); /* Цвет фона */
+   
+    
+    background-size: cover;
+    background-position: center;
+    /* Дополнительные стили для фона */
+  }
+
+
+  /* Размещение элементов в контейнере */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Стили для описания */
+  .dropdown-menu p {
+    width: 50%; /* Ширина описания (левая часть) */
+    padding: 20px;
+    box-sizing: border-box;
+    order: 1; /* Изменение порядка отображения элементов, описание будет первым */
+    font-size: 23px;
+}
+  
+  
+  /* Стили для картинки */
+  .cheesecakes-image {
+    width: 50%; /* Ширина картинки (правая часть) */
+    text-align: left;
+    order: 12; /* Изменение порядка отображения элементов, картинка будет второй */
+}
+  
+  
+  .cheesecakes-image .image img {
+    max-width: 65%; /* Максимальная ширина картинки для адаптивности */
+  }
+  
+  /* Стили для кнопки "BUY" */
+  .buy-button {
+    width: 100%;
+    margin-top: 20px;
+    order: 3; 
+  }
+  
+  .container {
+    text-align: center; /* Выравнивание по центру горизонтально */
+    line-height: 100px; /* Выравнивание по центру вертикально */
+}
+/* Стили для ссылки внутри блока */
+.buy-button {
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+    color:black;/* Цвет текста */
+    background-color: gold; /* Цвет фона кнопки */
+    font-size: 40px;
+    border: 2px solid black; /* Толщина, стиль и цвет рамки */
+  }
+  
+/*для СЧЁТЧИКА*/
+
+
+
+button {
+  text-decoration: none; /* Убирает подчеркивание ссылки */
+    color:black;/* Цвет текста */
+    background-color: gold; /* Цвет фона кнопки */
+    font-size: 40px;
+    transition: background-color 0.3s; /* Добавляем анимацию для плавного изменения цвета фона */
+   
+  }
+  
+  button:hover {
+    background-color: red; /* Изменяем цвет фона при наведении */
+  }
+#counter {
+  width: 80px; /* Ширина поля ввода */
+  padding: 5px; /* Внутренний отступ */
+  font-size: 40px; /* Размер шрифта */
+  border: 1px solid black; /* Граничная рамка */
+  border-radius: 15px; /* Скругление углов */
+  
+}
+/*для состава продукта*/
