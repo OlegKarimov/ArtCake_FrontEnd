@@ -166,16 +166,36 @@ h3 {
     order: 3; 
   }
   
-  .container {
-    text-align: center; /* Выравнивание по центру горизонтально */
-    line-height: 100px; /* Выравнивание по центру вертикально */
+  /* Стили для элемента с классом .container (кнопки) */
+.container {
+  display: inline-block; /* Делаем элемент блочным, чтобы применить ширину и высоту */
+  width: 200px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+  text-align: center; /* Выравнивание текста по центру горизонтально */
+  line-height: 50px; /* Выравнивание текста по центру вертикально */
+  background-color: orange; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание текста */
+  border: none; /* Убираем границу кнопки */
+  border-radius: 5px; /* Закругляем углы */
+  font-size: 26px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  cursor: pointer; /* Задаем вид курсора при наведении */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
 }
+
+/* Стиль для кнопки при наведении */
+.container:hover {
+  background-color: #ff6600; /* Изменяем цвет фона при наведении */
+  text-decoration: none;
+}
+
 /* Стили для ссылки внутри блока */
 .buy-button {
     text-decoration: none; /* Убирает подчеркивание ссылки */
     color:black;/* Цвет текста */
     background-color: gold; /* Цвет фона кнопки */
-    font-size: 40px;
+    font-size: 30px;
     border: 2px solid black; /* Толщина, стиль и цвет рамки */
   }
   
@@ -203,4 +223,35 @@ button {
   border-radius: 15px; /* Скругление углов */
   
 }
-/*для состава продукта*/
+
+
+/* Стили для строки таблицы */
+/* Стили для контейнера таблицы */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Высота контейнера на весь экран */
+}
+
+/* Стили для таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: orange; /* Цвет фона таблицы */
+}
+
+/* Стили для заголовка таблицы */
+th {
+  text-align: left; /* Выравнивание текста по левому краю */
+  padding: 20px; /* Отступы внутри ячейки */
+  font-size: 36px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  color: black; /* Цвет текста */
+}
+
+/* Стили для ячеек таблицы */
+td {
+  padding: 20px; /* Отступы внутри ячейки */
+  font-size: 24px; /* Размер шрифта */
+}

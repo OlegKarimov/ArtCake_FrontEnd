@@ -63,8 +63,8 @@
 }
 
 body {
-  background-color: rgb(235, 226, 176); /* Замените "#цвет" на конкретный цвет, который вы хотите использовать */
-  background-size: cover; /* чтобы изображение занимало всю видимую область */
+  background-color: rgb(235, 226, 176); 
+  background-size: cover; /* чтобы  занимало всю видимую область */
   background-repeat: no-repeat; /* чтобы изображение не повторялось */
 }
 
@@ -113,7 +113,7 @@ header h1 {
 /*для Сheesecakes*/
 .cheesecakes-container {
   display: flex;
-  justify-content: space-between; /*  распределить пространство между элементами */
+  justify-content: space-between; /*   пространство между элементами */
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px;
 }
@@ -131,8 +131,8 @@ header h1 {
 }
 
 .cheesecakes-image .image {
-  text-align: right; /* Выравнивание изображения по правому краю */
-  padding-right: 20px; /* Добавляем небольшой отступ справа */
+  text-align: right; /* Выравнивание по правому краю */
+  padding-right: 20px; /* Добавляем  отступ справа */
   max-width: 70%;
  
 }
@@ -149,7 +149,7 @@ header h1 {
 .cupcakes-description {
   flex: 1; /* Занимать всю доступную ширину */
   padding: 20px;
-  text-align: left; /* Выравнивание текста по левому краю */
+  text-align: left; 
 }
 
 .cupcakes-image {
@@ -330,7 +330,7 @@ header h1 {
   
   background-size: cover;
   background-position: center;
-  /* Дополнительные стили для фона */
+  /* Доп стили для фона */
 }
 .cheesecakes-heading {
   color: red; 
@@ -348,14 +348,14 @@ header h1 {
 
 /*для кнопки купить -price*/
 li button {
-  background-color: #3498db; /* Цвет фона кнопки */
-  color: #fff; /* Цвет текста на кнопке */
-  padding: 5px 10px; /* Внутренние отступы кнопки */
-  border: none; /* Убираем границу у кнопки */
-  cursor: pointer; /* Задаем курсор в виде указателя при наведении */
+  background-color: #3498db; 
+  color: #fff; 
+  padding: 5px 10px; 
+  border: none; 
+  cursor: pointer; 
 }
 
-/* Стили при наведении на кнопку */
+/* при наведении на кнопку */
 li button:hover {
   background-color: #2980b9; /* Цвет фона кнопки при наведении */
 }
