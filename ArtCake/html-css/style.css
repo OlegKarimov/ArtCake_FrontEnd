@@ -62,7 +62,11 @@
   font-size: 24px;
 }
 
-
+body {
+  background-color: rgb(235, 226, 176); /* Замените "#цвет" на конкретный цвет, который вы хотите использовать */
+  background-size: cover; /* чтобы изображение занимало всю видимую область */
+  background-repeat: no-repeat; /* чтобы изображение не повторялось */
+}
 
 .order-button {
   display: inline-block; /* Делаем ссылку блочным элементом */
@@ -354,4 +358,20 @@ li button {
 /* Стили при наведении на кнопку */
 li button:hover {
   background-color: #2980b9; /* Цвет фона кнопки при наведении */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Стиль при наведении */
+.button:hover {
+  background-color: #0056b3;
 }

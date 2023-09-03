@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+<!-- ссылка на подключение внешнего css -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet"> <!-- Добавил ссылку на изменение шрифта.??? задача -->
+
+ </head>
+​<body>
+  <script>
+
+    
+    
+
+      function toggleForm() {
+        var loginForm = document.getElementById("login-form");
+        var singInForm = document.getElementById("singin-form");
+
+        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+        singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
+    }
+
+    function signOut() {
+       
+        window.location.href = "/log_in.html";
+    }
+  </script>
+
+<!--Попробовали прописать калькулятор -->
+<h1>Калькулятор сумм</h1>
+<form id="calculator-form">
+    <input type="text" id="display" readonly>
+    <br>
+    <button type="button" onclick="appendToDisplay('1')">1</button>
+    <button type="button" onclick="appendToDisplay('2')">2</button>
+    <button type="button" onclick="appendToDisplay('3')">3</button>
+    <button type="button" onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('4')">4</button>
+    <button type="button" onclick="appendToDisplay('5')">5</button>
+    <button type="button" onclick="appendToDisplay('6')">6</button>
+    <button type="button" onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('7')">7</button>
+    <button type="button" onclick="appendToDisplay('8')">8</button>
+    <button type="button" onclick="appendToDisplay('9')">9</button>
+    <button type="button" onclick="appendToDisplay('*')">*</button>
+    <br>
+    <button type="button" onclick="appendToDisplay('0')">0</button>
+    <button type="button" onclick="clearDisplay()">C</button>
+    <button type="button" onclick="appendToDisplay('.')">.</button>
+
+    <button type="button" onclick="calculate()">=</button>
+    <button type="button" onclick="appendToDisplay('/')">/</button>
+</form>
+
+<script>
+    const display = document.getElementById('display');
+
+    function appendToDisplay(value) {
+    // Проверьте, что точка еще не добавлена
+    if (value === '.' && display.value.includes('.')) {
+        return; // Если точка уже есть, игнорируем
+    }
+        display.value += value;
+    }
+
+    function clearDisplay() {
+        display.value = '';
+    }
+
+    function calculate() {
+        try {
+            const result = eval(display.value);
+            if (!isNaN(result)) {
+                display.value = result;
+            } else {
+                display.value = 'Ошибка';
+            }
+        } catch (error) {
+            display.value = 'Ошибка';
+        }
+    }
+</script>  
+
+
+</body>
+</html>

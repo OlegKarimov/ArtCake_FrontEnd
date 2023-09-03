@@ -62,7 +62,7 @@ input[type="password"] {
 /* Стили для кнопки */
 button[type="submit"] {
   padding: 10px 182px;
-  background-color: rgb(100, 100, 255);
+  background-color: red;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -191,4 +191,19 @@ form {
 #singin-form2 button[type="submit"]:hover,
 #singin-form2 button[type="button"]:hover {
   background-color: #0056b3;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Регулируйте отступы, чтобы кнопка была нужного размера */
+  background-color: #007bff; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  text-decoration: none; /* Убираем подчеркивание текста */
+  border: none; /* Убираем границу кнопки */
+  border-radius: 5px; /* Закругляем углы кнопки */
+  cursor: pointer; /* Задаем курсор в виде указателя при наведении */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Изменяем цвет фона при наведении */
 }

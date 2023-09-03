@@ -39,61 +39,7 @@
   </script>
 
 <!--Попробовали прописать калькулятор -->
-<h1>Калькулятор сумм</h1>
-<form id="calculator-form">
-    <input type="text" id="display" readonly>
-    <br>
-    <button type="button" onclick="appendToDisplay('1')">1</button>
-    <button type="button" onclick="appendToDisplay('2')">2</button>
-    <button type="button" onclick="appendToDisplay('3')">3</button>
-    <button type="button" onclick="appendToDisplay('+')">+</button>
-    <br>
-    <button type="button" onclick="appendToDisplay('4')">4</button>
-    <button type="button" onclick="appendToDisplay('5')">5</button>
-    <button type="button" onclick="appendToDisplay('6')">6</button>
-    <button type="button" onclick="appendToDisplay('-')">-</button>
-    <br>
-    <button type="button" onclick="appendToDisplay('7')">7</button>
-    <button type="button" onclick="appendToDisplay('8')">8</button>
-    <button type="button" onclick="appendToDisplay('9')">9</button>
-    <button type="button" onclick="appendToDisplay('*')">*</button>
-    <br>
-    <button type="button" onclick="appendToDisplay('0')">0</button>
-    <button type="button" onclick="clearDisplay()">C</button>
-    <button type="button" onclick="appendToDisplay('.')">.</button>
 
-    <button type="button" onclick="calculate()">=</button>
-    <button type="button" onclick="appendToDisplay('/')">/</button>
-</form>
-
-<script>
-    const display = document.getElementById('display');
-
-    function appendToDisplay(value) {
-    // Проверьте, что точка еще не добавлена
-    if (value === '.' && display.value.includes('.')) {
-        return; // Если точка уже есть, игнорируем
-    }
-        display.value += value;
-    }
-
-    function clearDisplay() {
-        display.value = '';
-    }
-
-    function calculate() {
-        try {
-            const result = eval(display.value);
-            if (!isNaN(result)) {
-                display.value = result;
-            } else {
-                display.value = 'Ошибка';
-            }
-        } catch (error) {
-            display.value = 'Ошибка';
-        }
-    }
-</script>
 
 
   <div class="logo">ArtCake</div>
@@ -105,16 +51,15 @@
     </ul>
   </div>
 ​  <div class="sign-out-block">
-  <a class="register-button" href="#">SingOut</a>
+   
+<!-- 3.09 добавили гиппер сылку на calculator.html-->
+  <a href="../page_registr/log_in.html">SingOut</a>
 </div>
 <div class="image-between-blocks">
 
 <!-- для шаблонной картинки-->
 <!-- для шаблонной картинки-->
 <img src="    " alt="    ">
-
-
-
 
 <header>
   
@@ -125,21 +70,21 @@
     <h1 class="cheesecakes-heading">Cheesecakes</h1>
     <h3>RaspberryCheesecake</h3>
    
-    <li><button type="button" onclick="appendToDisplay('25')">Price: $25</button></li>
+    <a href="../menu_choise/rasberry.html" class="button">Price:$40</a>
 
     <h3>WildberriesCheesecake</h3>
    
-    <li><button type="button" onclick="appendToDisplay('30')">Price: $30</button></li>
+    <a href="../menu_choise/wildberry.html" class="button">Price:$30</a>
 
     <h3>LillyCheesecake</h3>
-    <li><button type="button" onclick="appendToDisplay('29')">Price: $29</button></li>
+    <a href="../menu_choise/lilly.html" class="button">Price:$29</a>
 
     <h3>VanillaCheesecake</h3>
-    <li><button type="button" onclick="appendToDisplay('40,99')">Price: $40</button></li>
+    <a href="../menu_choise/vanilla.html" class="button">Price:$29</a>
 
     <h3>ChocolateCheesecake</h3>
  
-    <li><button type="button" onclick="appendToDisplay('32')">Price: $32</button></li>
+    <a href="../menu_choise/chocolate.html" class="button">Price:$32</a>
 
   </div>
   <div class="cheesecakes-image">
@@ -153,22 +98,22 @@
 <div class="cupcakes-container">
   <div class="cupcakes-description">
     <h1 class="cupcakes-heading">Cupcakes</h1>
-    <a href="log_in.html" class="buy-button">Price: $40</a>
+   
     <h3>BlackberryCupcake</h3>
-    <li><button type="button" onclick="appendToDisplay('28')">Price: $28</button></li>
+    <a href="../menu_choise/blackberry_cupcakes.html" class="button">Price:$30</a>
 
-    <h3>ChocolateCupcake</h3>
-    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+    <h3>FerreroCupcake</h3>
+    <a href="../menu_choise/ferrero_cupcakes.html" class="button">Price:$35</a>
 
     <h3>BlueberryCupcake</h3>
-    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+    <a href="../menu_choise/blueberry_cupcake.html" class="button">Price:$40</a>
 
     <h3>WildberriesCupcake</h3>
    
     <div class="buttons">
       <div class="dropdown">
         <div class="dropdown-menu">
-          <button class="buy-button">Price:$32</button>
+          <a href="../menu_choise/wildberries_cupcakes.html" class="button">Price:$32</a>
         </div>
       </div>
     </div>       <!--Убераешь этот метод,поднимаеться картинка Macarons-->
@@ -184,20 +129,20 @@
   <div class="macaronsDescription">
     <h1 class="macarons-heading">Macarons</h1>
     <h3>Lemon Macarons</h3>
-    <li><button type="button" onclick="appendToDisplay('30')">Price: $30</button></li>
-
+    <a href="../menu_choise/lemon_macarons.html" class="button">Price:$30</a>
+    
     <h3>Velvet Macarons</h3>
-    <li><button type="button" onclick="appendToDisplay('28')">Price: $28</button></li>
+
+    <a href="../menu_choise/velvet_macarons.html" class="button">Price:$26</a>
 
     <h3>Chocolate Macarons</h3>
-    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+    <a href="../menu_choise/chocolate_macarons.html" class="button">Price:$27</a>
 
     <h3>Raspberries Macarons</h3>
-    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+    <a href="../menu_choise/raspberries_macarons.html" class="button">Price:$27</a>
 
     <h3>Blood Orange Macarons</h3>
-    <p>Price: 32$</p> 
-    <li><button type="button" onclick="appendToDisplay('32')">Price: $32</button></li>
+    <a href="../menu_choise/bloodorange_macarons.html" class="button">Price:$27</a>
 
   </div>
   <div class="MacaronsImage">
@@ -210,24 +155,23 @@
    <div class="mousseContainer">
   <div class="mousseDescription">
    <h1 class="mousse-heading">Mousse</h1>
-   <li><button type="button" onclick="appendToDisplay('30')">Price: $40</button></li>
-
+   
     <h3>StrawberryMousse</h3>
-    <li><button type="button" onclick="appendToDisplay('28')">Price: $40</button></li>
+    <a href="../menu_choise/strawberry_mousse.html" class="button">Price:$30</a>
 
     <h3>BlackberryMousse</h3>
-    <li><button type="button" onclick="appendToDisplay('35')">Price: $35</button></li>
+    <a href="../menu_choise/blackberry_mousse.html" class="button">Price:$35</a>
 
     <h3>AppleMousse</h3>
-    <li><button type="button" onclick="appendToDisplay('40')">Price: $40</button></li>
+    <a href="../menu_choise/apple_mousse.html" class="button">Price:$39</a>
 
     <h3>RaspberryMousse</h3>
    
     <div class="buttons">
       <div class="dropdown">
         <div class="dropdown-menu">
-          <button class="buy-button">Price:$32</button>
-        
+          <a href="../menu_choise/raspberry_mousse.html" class="button">Price:$30</a>
+
         </div>
       </div>
     </div>
