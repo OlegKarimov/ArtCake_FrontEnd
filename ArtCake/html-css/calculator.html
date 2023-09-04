@@ -63,9 +63,9 @@
     const display = document.getElementById('display');
 
     function appendToDisplay(value) {
-    // Проверьте, что точка еще не добавлена
+    
     if (value === '.' && display.value.includes('.')) {
-        return; // Если точка уже есть, игнорируем
+        return; 
     }
         display.value += value;
     }

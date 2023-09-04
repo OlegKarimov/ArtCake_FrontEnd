@@ -357,7 +357,7 @@ li button {
 
 /* при наведении на кнопку */
 li button:hover {
-  background-color: #2980b9; /* Цвет фона кнопки при наведении */
+  background-color: #2980b9; 
 }
 
 .button {

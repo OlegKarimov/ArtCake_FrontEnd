@@ -13,7 +13,7 @@
   h1 { /*для Sing In*/
     font-size: 28px;
     color:black;
-    text-align: center; /* Выравнивание по центру */
+    text-align: center; 
   }
   
   form {
@@ -50,11 +50,11 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%; /* Ширина полей на всю доступную ширину */
-  height: 50px; /* Установите желаемую высоту */
+  height: 50px; 
   padding: 5px 10px; /* Внутренние отступы */
-  border: 1px solid w; /* Граница для стиля поля */
+  border: 1px solid w; 
   border-radius: 10px; /* Закругленные углы */
-  box-sizing: border-box; /* Учитываем границу внутри размера */
+  box-sizing: border-box; 
   margin-bottom: 2px; /* Отступ снизу между полями */
   vertical-align: baseline;/* Выравнивание по вертикали */
 }
@@ -88,11 +88,11 @@ button[type="submit"] {
  /* Таблица вокруг регистрации*/
 form {
     border: 2px solid #ccc; /* Граница вокруг формы */
-    border-radius: 10px; /* Закругление углов формы */
+    border-radius: 10px; /* Закругление углов */
     padding: 20px; /* Внутренние отступы внутри формы */
     max-width: 400px; /* Максимальная ширина формы */
     margin: 0 auto; /* Центрирование формы по горизонтали */
-    background-color: #f9f9f9; /* Фоновый цвет формы */
+    background-color: #f9f9f9; 
   }
 .container {
     max-width: 400px;
@@ -195,15 +195,15 @@ form {
 
 .button {
   display: inline-block;
-  padding: 10px 20px; /* Регулируйте отступы, чтобы кнопка была нужного размера */
-  background-color: #007bff; /* Цвет фона кнопки */
-  color: #fff; /* Цвет текста кнопки */
-  text-decoration: none; /* Убираем подчеркивание текста */
-  border: none; /* Убираем границу кнопки */
-  border-radius: 5px; /* Закругляем углы кнопки */
-  cursor: pointer; /* Задаем курсор в виде указателя при наведении */
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none; /* подчеркивание текста */
+  border: none; /* границу кнопки */
+  border-radius: 5px; /* Закругляем углы  */
+  cursor: pointer; /*  курсор */
 }
 
 .button:hover {
-  background-color: #0056b3; /* Изменяем цвет фона при наведении */
+  background-color: #0056b3; 
 }
