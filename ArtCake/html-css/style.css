@@ -23,8 +23,9 @@
 .image-between-blocks img {
   width: 100%; /* Растягиваем изображение на всю ширину блока */
   height: auto; /* Автоматическая высота */
-  padding: 10px ; /* Добавляем внутренние отступы сверху и снизу */
- 
+  padding: 0px ; /* Добавляем внутренние отступы сверху и снизу */
+  max-width:100%; /*ширина изображения */
+
 }
 .image-caption {
   position: absolute;
@@ -63,7 +64,7 @@
 }
 
 body {
-  background-color: rgb(235, 226, 176); 
+  background-color: white; 
   background-size: cover; /* чтобы  занимало всю видимую область */
   background-repeat: no-repeat; /* чтобы изображение не повторялось */
 }
@@ -113,29 +114,26 @@ header h1 {
 /*для Сheesecakes*/
 .cheesecakes-container {
   display: flex;
-  justify-content: space-between; /*   пространство между элементами */
-  align-items: center; /* Выравнивание по вертикали */
-  padding: 20px;
+  align-items: center;
 }
 
 .cheesecakes-description {
-  flex: 1; /*  чтобы описание заняло левую часть */
+  flex: 1; 
   padding: 20px;
-  order: 2; /*  чтобы описание было справа */
+  order: 2;  /*  чтобы описание было справа */
+  font-size: 21px;
 }
 
 .cheesecakes-image {
-  flex: 1; /*  чтобы изображение заняло правую часть */
-  max-width: 70%;
-  
+  flex: 1; 
 }
 
-.cheesecakes-image .image {
-  text-align: right; /* Выравнивание по правому краю */
-  padding-right: 20px; /* Добавляем  отступ справа */
+.cheesecakes-image img {
+  text-align: right; 
+  padding-right: 20px;
   max-width: 70%;
- 
 }
+
 
 
 /*для Cupcakes*/
@@ -145,23 +143,19 @@ header h1 {
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px;
 }
-
 .cupcakes-description {
-  flex: 1; /* Занимать всю доступную ширину */
-  padding: 20px;
-  text-align: left; 
-}
-
-.cupcakes-image {
   flex: 1; 
-  max-width: 70%;
+  padding: 20px;
+  text-align: left;
+  font-size: 21px;
+}
+.cupcakes-image {
+  flex: 1;
   
 }
-
-.cupcakes-image .image {
-  text-align: left; /* Выравнивание картинки по правому краю */
-  padding-left:  20px;
+.cupcakes-image img {
   max-width: 70%;
+  max-height: 100%;
 }
 
 
@@ -174,7 +168,8 @@ header h1 {
 .macaronsDescription {
   flex: 1; 
   padding: 20px;
-  order: 2; / /*  чтобы описание было справа */
+  order: 2;  /*  чтобы описание было справа */
+  font-size: 21px;
 }
 
 .MacaronsImage {
@@ -199,7 +194,12 @@ header h1 {
   flex: 1; 
   padding: 20px;
   text-align: left;
+  font-size: 21px;
 }
+
+
+
+
 
 .MousseImage {
   flex: 1;
@@ -257,7 +257,7 @@ header h1 {
   align-items: center;
 }
 .image-container img {
-  max-width: 70%;
+  max-width: 100%;
   max-height: 100%;
 }
 
@@ -274,7 +274,7 @@ header h1 {
   max-width: 70%;
 }
 .image-container2 img {
-  max-width: 70%;  /*уменьшение или прибавление картинки*/
+  max-width: 100%;  /*уменьшение или прибавление картинки*/
   max-height: 100%;
  
 }
